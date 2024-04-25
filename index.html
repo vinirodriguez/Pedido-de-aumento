@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Aumento</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <img id="imagem" src="C:\Users\User\OneDrive\Área de Trabalho\reconhecimento facial\face\urso.png" alt="Imagem do Funcionário">
+        <p id="nome">Olá Chefe</p>
+        <p id="texto-pedido">O SENHOR PODERIA POR GENTILEZA ME DA UM AUMENTO ?</p>
+        <div id="botoes">
+            <button class="botao botao-sim" onclick="clicarSim()">Claro!</button>
+            <button class="botao botao-nao">Não</button> <!-- Removido o evento onclick do botão "Não" -->
+        </div>
+        <p id="resultado"></p>
+    </div>
+    <script>
+        function clicarSim() {
+            document.getElementById("resultado").innerHTML = "<strong>ATRIBUTOS MELHORADOS</strong><br> SALARIO + 20 %<br><strong>VONTADE DE SE DEMITIR - 27 %</strong><br><strong>CODIÇÕES PARA COMPRAR UM IPHONE + 1 % </strong><br><strong>VONTADE DE VIRAR BABA OVO DO CHEFE 20 % </strong>";
+            document.getElementById("botoes").style.display = "none"; // Esconde os botões após o clique em "Sim"
+        
+        }
+    </script>
+</body>
+</html>

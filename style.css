@@ -1,0 +1,104 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(227, 97, 10);
+     }    
+
+#imagem {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#nome {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:yellow;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color:rgb(132, 0, 255);
+}
+
+#texto-pedido {
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color:rgb(132, 0, 255);
+    color: yellow;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+body{
+    background-color: rgb(132, 0, 255);
+}
+
+
+.botao {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #eee;
+}
+
+.botao-sim {
+    background-color: #24c529;
+    color: white;
+}
+
+.botao-sim:hover {
+    background-color: #24c529;
+}
+
+.botao-nao {
+    background-color: #f44336;
+    color: white;
+    position: fixed; /* Botão "Não" fixo na tela */
+    animation: moveAround 3s infinite linear; /* Animação para mover o botão "Não" */
+}
+
+@keyframes moveAround {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 100px); /* Move para o canto superior direito */
+    }
+    50% {
+        top: calc(100% - 100px); /* Move para o canto inferior direito */
+        left: calc(100% - 100px);
+    }
+    75% {
+        top: calc(100% - 100px); /* Move para o canto inferior esquerdo */
+        left: 0;
+    }
+    100% {
+        top: 0; /* Move de volta para o canto superior esquerdo */
+        left: 0;
+    }
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
